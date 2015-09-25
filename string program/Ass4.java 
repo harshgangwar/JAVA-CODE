@@ -1,0 +1,35 @@
+import java.util.Scanner;
+class Ass4
+{
+	char arr[]=new char[26];
+	static int flag,t,d;
+		static char ch;
+	public static void main(String... harsh)
+	{
+		Scanner sc=new Scanner(System.in);
+		String in=sc.nextLine();
+
+		for(int i=0;i<in.length();i++)
+		{
+			flag=0;
+			ch=in.charAt(i);
+			
+			t=(char)ch;
+			d=t-65;
+			flag=arr[d];
+			flag+=1;
+			arr[d]=flag; 
+		}		
+		for(int j=0;j<26;j++)
+		{
+			if(arr[j]!=0)
+			{
+				int te=65+j;
+				System.out.println((char)te + "    " + arr[j] );
+
+
+
+			}
+		}
+	}
+}

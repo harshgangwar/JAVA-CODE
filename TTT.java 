@@ -1,0 +1,14 @@
+class TT
+{
+	public static void main(String... harsh)
+	{
+
+	static String n=-1;
+	static String n1=-5;
+	int r=ncompareTo)(n1);
+	System.out.println(r);
+
+
+
+	}
+}

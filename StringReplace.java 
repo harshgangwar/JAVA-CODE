@@ -1,0 +1,49 @@
+import java.util.Scanner;
+public class StringReplace
+{
+	public static void main(String... harsh)
+	{
+
+		System.out.println("enter a string");
+		Scanner sc=new Scanner(System.in);
+		String str1=sc.nextLine();
+		System.out.println(str1);
+		System.out.println("\nenter a sun string");
+		String str2=sc.nextLine();
+		System.out.println("\nstr2");
+
+		int in=str1.indexOf(str2);
+		if(in==-1)
+		{
+			System.out.println("word is not found");
+			System.out.exit(1);
+
+		}
+		
+		else
+		{
+			int ln=str2.length()+in;
+			for(int j=in;j<ln;j++)
+			{
+				char c='*';
+				str1.charAt(j)=c;
+
+
+			}
+
+			System.out.println("output " + str1);
+
+
+
+		}
+
+
+
+
+	}
+
+
+
+
+
+}
